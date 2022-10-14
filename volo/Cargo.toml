@@ -20,7 +20,7 @@ keywords = ["async", "rpc", "thrift", "grpc", "protobuf"]
 maintenance = { status = "actively-developed" }
 
 [dependencies]
-motore = { git = "https://github.com/cloudwego/motore", branch = "main" }
+motore = { git = "https://github.com/cloudwego/motore.git", rev = "0ee4cb5f38702fae277412b20756ddd5ab095b81" }
 
 tokio = { version = "1", features = ["net", "time", "sync", "io-util"] }
 pin-project = "1"

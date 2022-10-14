@@ -779,7 +779,18 @@ version = "0.1.0"
 source = "git+https://github.com/cloudwego/motore?branch=main#76a8b6019265efe333b10a067f825633ad724c61"
 dependencies = [
  "futures",
- "motore-macros",
+ "motore-macros 0.1.0 (git+https://github.com/cloudwego/motore?branch=main)",
+ "pin-project",
+ "tokio",
+]
+
+[[package]]
+name = "motore"
+version = "0.2.0"
+source = "git+https://github.com/cloudwego/motore.git?rev=0ee4cb5f38702fae277412b20756ddd5ab095b81#0ee4cb5f38702fae277412b20756ddd5ab095b81"
+dependencies = [
+ "futures",
+ "motore-macros 0.1.0 (git+https://github.com/cloudwego/motore.git?rev=0ee4cb5f38702fae277412b20756ddd5ab095b81)",
  "pin-project",
  "tokio",
 ]
@@ -788,6 +799,16 @@ dependencies = [
 name = "motore-macros"
 version = "0.1.0"
 source = "git+https://github.com/cloudwego/motore?branch=main#76a8b6019265efe333b10a067f825633ad724c61"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "motore-macros"
+version = "0.1.0"
+source = "git+https://github.com/cloudwego/motore.git?rev=0ee4cb5f38702fae277412b20756ddd5ab095b81#0ee4cb5f38702fae277412b20756ddd5ab095b81"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1898,7 +1919,7 @@ dependencies = [
  "futures",
  "lazy_static",
  "metainfo",
- "motore",
+ "motore 0.2.0",
  "once_cell",
  "pin-project",
  "rand",
@@ -1978,7 +1999,7 @@ dependencies = [
  "hyper",
  "hyper-timeout",
  "metainfo",
- "motore",
+ "motore 0.2.0",
  "percent-encoding",
  "pin-project",
  "prost",
@@ -2008,7 +2029,7 @@ dependencies = [
  "lazy_static",
  "linked-hash-map",
  "metainfo",
- "motore",
+ "motore 0.1.0",
  "num_enum",
  "parking_lot 0.12.1",
  "pilota",
